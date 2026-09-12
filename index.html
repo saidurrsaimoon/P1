@@ -3,193 +3,351 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saimoon | Personal Website</title>
+
+  <title>Saimoon | Personal Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">SAIMOON<span>.</span></a>
+  <!-- Background -->
+  <div class="background">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="grid"></div>
+  </div>
 
-  <button class="menu-btn" id="menuBtn">☰</button>
+  <!-- Navbar -->
+  <header class="navbar">
 
-  <nav id="mainNav">
-    <a class="active" href="index.html">Home</a>
+    <a href="index.html" class="logo">
+      <span>SR</span>
+      SAIMOON
+    </a>
+
+    <nav id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-buttons">
+      <button id="themeBtn">☼</button>
+      <button id="menuBtn">☰</button>
+    </div>
+
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="education.html">Education</a>
     <a href="skills.html">Skills</a>
     <a href="hobbies.html">Hobbies</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
-  </nav>
+  </div>
 
-  <button class="theme-btn" id="themeBtn">☾</button>
-</header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="education.html">Education</a>
-  <a href="skills.html">Skills</a>
-  <a href="hobbies.html">Hobbies</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</div>
+  <!-- Hero -->
+  <main>
 
-<main>
+    <section class="hero">
 
-<section class="hero">
-  <div class="hero-text">
-    <p class="small-title">WELCOME TO MY DIGITAL SPACE 👋</p>
+      <div class="hero-text">
 
-    <h1>Hi, I'm <span>Saimoon</span></h1>
+        <div class="small-title">
+          <span></span>
+          PERSONAL PORTFOLIO
+        </div>
 
-    <h2 id="typingText"></h2>
+        <h1>
+          Hello, I'm
+          <br>
+          <strong>SAIDUR</strong>
+        </h1>
 
-    <p class="hero-description">
-      Student by profession, curious by nature, gamer when free,
-      movie watcher when bored — and occasionally a professional
-      overthinker. 😄
-    </p>
+        <div class="typing">
+          <span id="typingText"></span>
+          <span class="cursor">|</span>
+        </div>
 
-    <div class="buttons">
-      <a href="about.html" class="primary-btn">Explore Me →</a>
-      <button class="secondary-btn" id="curiousBtn">
-        Press If You're Curious 👀
-      </button>
+        <p>
+          A curious Soil Science student who loves technology,
+          learning new things and turning ideas into something useful.
+        </p>
+
+        <div class="buttons">
+
+          <a href="about.html" class="btn primary">
+            Explore Profile →
+          </a>
+
+          <a href="contact.html" class="btn secondary">
+            Contact Me
+          </a>
+
+        </div>
+
+        <div class="quick-info">
+
+          <div>
+            <strong>19+</strong>
+            <span>Years Old</span>
+          </div>
+
+          <div>
+            <strong>2025–26</strong>
+            <span>Academic Session</span>
+          </div>
+
+          <div>
+            <strong>30</strong>
+            <span>WPM Typing</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Profile -->
+      <div class="hero-photo">
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="photo-card">
+
+          <img
+            src="profile.jpg"
+            alt="Saimoon"
+            onerror="this.style.display='none';document.querySelector('.photo-placeholder').style.display='flex';"
+          >
+
+          <div class="photo-placeholder">
+            SR
+          </div>
+
+        </div>
+
+
+        <div class="floating-card location">
+          📍 Barishal
+        </div>
+
+        <div class="floating-card study">
+          🎓 Soil Science
+        </div>
+
+        <div class="floating-card status">
+          <span></span>
+          Available to learn
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- About Preview -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <div>
+          <small>QUICK INTRO</small>
+          <h2>A little about <span>me.</span></h2>
+        </div>
+
+        <a href="about.html">View More →</a>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="card-icon">👋</div>
+
+          <h3>Who I Am</h3>
+
+          <p>
+            I'm MD. Saidur Rohoman Saimoon,
+            a curious and motivated learner interested
+            in technology, communication and problem-solving.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">🎓</div>
+
+          <h3>What I Study</h3>
+
+          <p>
+            Currently studying B.Sc. (Hons.) in
+            Soil Science at Barishal Govt. College.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">🚀</div>
+
+          <h3>What I Like</h3>
+
+          <p>
+            Technology, digital tools, photography,
+            movies, games and learning new things.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Age -->
+    <section class="section">
+
+      <div class="special-box">
+
+        <div>
+          <small>LIVE INFORMATION</small>
+
+          <h2>
+            Time keeps
+            <span>moving.</span>
+          </h2>
+
+          <p>
+            Here's how long I've been around.
+          </p>
+        </div>
+
+
+        <div class="age-area">
+
+          <div class="age-number">
+            <strong id="ageYears">--</strong>
+            <span>Years</span>
+          </div>
+
+          <div class="age-details" id="ageDetails">
+            Calculating...
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Birthday -->
+    <section class="section">
+
+      <div class="birthday">
+
+        <div class="birthday-icon">
+          🎂
+        </div>
+
+        <div>
+
+          <small>NEXT BIRTHDAY</small>
+
+          <h2 id="birthdayCountdown">
+            Loading...
+          </h2>
+
+          <p>
+            25 January
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Fun -->
+    <section class="section">
+
+      <div class="fun-box">
+
+        <small>JUST FOR FUN</small>
+
+        <h2>
+          You found the
+          <span>fun zone.</span> 😎
+        </h2>
+
+        <p>
+          Click one. Let's see what happens.
+        </p>
+
+
+        <div class="fun-buttons">
+
+          <button data-message="curious">
+            👀 I'm Curious
+          </button>
+
+          <button data-message="bored">
+            😐 I'm Bored
+          </button>
+
+          <button data-message="dont">
+            🚫 Do NOT Click
+          </button>
+
+        </div>
+
+
+        <div id="funMessage" class="fun-message">
+          Waiting for your click...
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div>
+      <strong>SAIMOON</strong>
+      <p>
+        Built with curiosity, code & a little caffeine.
+      </p>
     </div>
 
-    <div id="funnyMessage" class="funny-message"></div>
-  </div>
+    <span>
+      © <span id="year"></span> Saimoon
+    </span>
 
-  <div class="profile-card">
-    <div class="profile-glow"></div>
-    <img src="profile.jpg" alt="Saimoon"
-         onerror="this.src='https://placehold.co/500x500/111827/ffffff?text=SAIMOON'">
-  </div>
-</section>
+  </footer>
 
-<section class="info-section">
 
-  <div class="info-card reveal">
-    <div class="icon">🎂</div>
-    <h3>Birthday</h3>
-    <p>25 January 2007</p>
-  </div>
+  <script src="script.js"></script>
 
-  <div class="info-card reveal">
-    <div class="icon">❤️</div>
-    <h3>Relationship</h3>
-    <p>Single</p>
-  </div>
-
-  <div class="info-card reveal">
-    <div class="icon">📍</div>
-    <h3>Location</h3>
-    <p>Barishal Sadar, Barishal</p>
-  </div>
-
-  <div class="info-card reveal">
-    <div class="icon">🎓</div>
-    <h3>Study</h3>
-    <p>Soil Science</p>
-  </div>
-
-</section>
-
-<section class="age-section">
-  <div class="section-heading">
-    <p>TIME MACHINE ⏳</p>
-    <h2>My Life So Far</h2>
-  </div>
-
-  <div class="age-grid">
-
-    <div class="age-card">
-      <span id="ageYears">0</span>
-      <small>Years</small>
-    </div>
-
-    <div class="age-card">
-      <span id="ageMonths">0</span>
-      <small>Months</small>
-    </div>
-
-    <div class="age-card">
-      <span id="ageDays">0</span>
-      <small>Days</small>
-    </div>
-
-    <div class="age-card">
-      <span id="ageHours">0</span>
-      <small>Hours</small>
-    </div>
-
-    <div class="age-card">
-      <span id="ageMinutes">0</span>
-      <small>Minutes</small>
-    </div>
-
-    <div class="age-card">
-      <span id="ageSeconds">0</span>
-      <small>Seconds</small>
-    </div>
-
-  </div>
-
-  <div class="total-time">
-    <p>I've been alive for approximately</p>
-    <strong id="totalDays">0 days</strong>
-  </div>
-</section>
-
-<section class="birthday-section">
-  <div class="section-heading">
-    <p>NEXT SPECIAL DAY 🎉</p>
-    <h2>Birthday Countdown</h2>
-  </div>
-
-  <div id="birthdayCountdown" class="countdown">
-    <div><span id="cdDays">0</span><small>Days</small></div>
-    <div><span id="cdHours">0</span><small>Hours</small></div>
-    <div><span id="cdMinutes">0</span><small>Minutes</small></div>
-    <div><span id="cdSeconds">0</span><small>Seconds</small></div>
-  </div>
-</section>
-
-<section class="fun-section">
-
-  <div class="section-heading">
-    <p>JUST FOR FUN 😂</p>
-    <h2>Don't Take Everything Seriously</h2>
-  </div>
-
-  <div class="fun-buttons">
-    <button id="boredBtn">😴 I'm Bored</button>
-    <button id="moodBtn">🎭 My Current Mood</button>
-    <button id="dontBtn">🚫 DO NOT CLICK</button>
-    <button id="secretBtn">🔐 Secret Zone</button>
-  </div>
-
-  <div id="funResult" class="fun-result">
-    Click something above. I dare you. 😏
-  </div>
-
-  <div class="relationship-joke">
-    <span>❤️ Human: SINGLE</span>
-    <span>📶 Wi-Fi: COMPLICATED</span>
-  </div>
-
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 SAIDUR R. SAIMOON</p>
-  <span>Made with curiosity & a little bit of chaos 😎</span>
-</footer>
-
-<script src="script.js"></script>
 </body>
-        </html>
+</html>
